@@ -1,0 +1,32 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/">
+ <interface name="org.freedesktop.impl.portal.FileChooser">
+  <method name="OpenFile">
+   <arg name="handle" type="o" direction="in" />
+   <arg name="app_id" type="s" direction="in" />
+   <arg name="parent_window" type="s" direction="in" />
+   <arg name="title" type="s" direction="in" />
+   <arg name="options" type="a{sv}" direction="in" />
+   <arg name="response" type="u" direction="out" />
+   <arg name="results" type="a{sv}" direction="out" />
+  </method>
+  <method name="SaveFile">
+   <arg name="handle" type="o" direction="in" />
+   <arg name="app_id" type="s" direction="in" />
+   <arg name="parent_window" type="s" direction="in" />
+   <arg name="title" type="s" direction="in" />
+   <arg name="options" type="a{sv}" direction="in" />
+   <arg name="response" type="u" direction="out" />
+   <arg name="results" type="a{sv}" direction="out" />
+  </method>
+  <method name="SaveFiles">
+   <arg name="handle" type="o" direction="in" />
+   <arg name="app_id" type="s" direction="in" />
+   <arg name="parent_window" type="s" direction="in" />
+   <arg name="title" type="s" direction="in" />
+   <arg name="options" type="a{sv}" direction="in" />
+   <arg name="response" type="u" direction="out" />
+   <arg name="results" type="a{sv}" direction="out" />
+  </method>
+ </interface>
+</node>
